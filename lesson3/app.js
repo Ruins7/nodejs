@@ -19,11 +19,22 @@ app.get('/', function (req, res, next) {
       // 剩下就都是 jquery 的内容了
       var $ = cheerio.load(sres.text);
       var items = [];
+      
+
       $('#topic_list .topic_title').each(function (idx, element) {
         var $element = $(element);
         items.push({
           title: $element.attr('title'),
           href: $element.attr('href'),
+        });
+      });
+      
+    
+      $('#topic_list .user_avatar').each(function (idx, element) {
+        var $element = $(element);
+        var name = $element.attr('href');
+        items.push({
+          author: name.slice(6)
         });
       });
 

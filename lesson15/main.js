@@ -15,5 +15,5 @@ kitty.save(function(err){
    if (err){
      console.log('error...');
    }
-	console.log('meow');
+	console.log('added');
 });

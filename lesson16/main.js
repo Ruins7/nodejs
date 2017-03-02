@@ -3,7 +3,7 @@ var cookieParser = require('cookie-parser');
 var app = express();
 app.listen(3000);
 
-app.use(cookieParser);
+app.use(cookieParser());
 
 app.get('/', function(req, res){
     if(req.cookies.isVisit){

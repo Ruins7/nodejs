@@ -10,10 +10,10 @@ var app = express();
 app.get('/', function (req, res) {
 
 	//callback funtion execution
- 	//f1(f2);
+	//f1(f2);
 
- 	//event based
- 	f3.on('done', f4);
+	//event based
+	f3.on('done', f4);
 
   res.send('Hello World');
 });

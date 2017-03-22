@@ -1,6 +1,9 @@
 var Q = require('q');
 var defer = Q.defer();
 /**
+ *引入依赖
+ *／
+/**
  * 获取初始promise
  * @private
  */

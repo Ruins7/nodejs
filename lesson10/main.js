@@ -14,7 +14,7 @@ var int3 = function (str) {
   return Number(str);
 }
 
-var number = '50';
+var number = '40';
 
 //add tests
 suite

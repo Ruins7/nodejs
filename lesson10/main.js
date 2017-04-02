@@ -16,7 +16,7 @@ var int3 = function (str) {
 
 var number = '40';
 
-//add tests
+//add tests for testing
 suite
 .add('+', function(){
    int1(number);
@@ -28,7 +28,7 @@ suite
    int3(number);
 })
 
-//add listeners
+//add listeners for testing 
 .on('cycle',function(event){
      console.log(String(event.target));
 })

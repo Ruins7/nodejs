@@ -10,7 +10,7 @@ app.get('/', function(req, res){
          console.log(req.cookies);
          res.send('welcome back again');
      }else {
-         res.cookie('isVisit',1 , {maxAge:60* 1000 });
+         res.cookie('isVisit',1 , {maxAge:50* 1000 });
 	res.send('welcome first visit');
      }
 });

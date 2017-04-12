@@ -34,7 +34,7 @@ app.get('/', function (req, res, next) {
         var $element = $(element);
         var name = $element.attr('href');
         items.push({
-          author: name.slice(6)
+          author: name.slice(5)
         });
       });
 

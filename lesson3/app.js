@@ -19,7 +19,7 @@ app.get('/', function (req, res, next) {
       // 剩下就都是 jquery 的内容了
       var $ = cheerio.load(sres.text);
       var items = [];
-      
+
 
       $('#topic_list .topic_title').each(function (idx, element) {
         var $element = $(element);
@@ -28,8 +28,8 @@ app.get('/', function (req, res, next) {
           href: $element.attr('href'),
         });
       });
-      
-    
+
+
       $('#topic_list .user_avatar').each(function (idx, element) {
         var $element = $(element);
         var name = $element.attr('href');
@@ -42,4 +42,4 @@ app.get('/', function (req, res, next) {
     });
 });
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 8080);

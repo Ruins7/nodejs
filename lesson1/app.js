@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 	//f1(f2);
 
 	//event based
-	f3.on('done', f4);
+	//f3.on('done', f4);
 
   res.send('Hello World');
 });
@@ -24,28 +24,28 @@ app.listen(3000, function () {
 });
 
 //1.callback 
-function f1(callback){
-　　　　setTimeout(function () {
-　　　　　　// f1的任务代码
-		  console.log('f1的任务代码.....ing');
-　　　　　　callback();
-　　　　}, 10000);
-　　}
+// function f1(callback){
+// 　　　　setTimeout(function () {
+// 　　　　　　// f1的任务代码
+// 		  console.log('f1的任务代码.....ing');
+// 　　　　　　callback();
+// 　　　　}, 10000);
+// 　　}
 
-function f2(){
-　　　 console.log('f2 ..... ing');
-　　}
+// function f2(){
+// 　　　 console.log('f2 ..... ing');
+// 　　}
 
 
-//event based
-function f3(){
-　　　　setTimeout(function () {
-　　　　　　// f3的任务代码
-		  console.log('f3的任务代码.....ing');
-　　　　　　f1.trigger('done');
-　　　　}, 1000);
-　　}
+// //event based
+// function f3(){
+// 　　　　setTimeout(function () {
+// 　　　　　　// f3的任务代码
+// 		  console.log('f3的任务代码.....ing');
+// 　　　　　　f1.trigger('done');
+// 　　　　}, 1000);
+// 　　}
 
-function f4(){
-　　　 console.log('f4 ..... ing');
-　　}
+// function f4(){
+// 　　　 console.log('f4 ..... ing');
+// 　　}
